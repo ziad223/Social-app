@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #ccc;
+    height: 4000px;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.navbar .navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .navbar-left h2{
+    color: blue;
+}
+.navbar .navbar-left .icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .navbar-left .icons i{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.navbar .navbar-left .navbar-search{
+    position: relative;
+}
+.navbar .navbar-left .navbar-search input{
+    width: 400px;
+    padding: 7px 25px;
+    outline: none;
+}
+.navbar .navbar-left .navbar-search i{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    font-size: 18px;
+}
+
+.navbar .navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+}
+.navbar .navbar-right i{
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar .navbar-right h3{
+    color: blue;
+}
+ .profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Home */
+.home{
+    display: flex;
+    gap: 15px;
+}
+
+.left-bar{
+  background-color: #fff;
+  width: 15%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  top: 70px;
+ 
+}
+.left-bar .left-bar-content{
+    padding: 10px 20px;
+    
+}
+.left-bar .left-bar-content div{
+    display: flex;
+     align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.left-bar .left-bar-content div i{
+    font-size: 18px;
+}
+.left-bar .left-bar-content div p{
+    font-size: 18px;
+}
+.left-bar .left-bar-content .h p{
+    color: blue;
+    font-weight: bold;
+    font-size: 16px;
+}
+hr{
+    margin-top: 10px;
+}
+
+/* Middle-bar */
+
+    .middle-bar{
+        width: 60%;
+}
+.middle-bar .content-up {
+    margin-top: 20px;
+}
+.middle-bar .content-up .stories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+.middle-bar .content-up .stories .story{
+    position: relative;
+}
+.middle-bar .content-up .stories .story span{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    background-color: rgb(107, 160, 230);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.middle-bar .stories .story img{
+    width: 140px;
+    height: 200px;
+    border-radius: 10px;
+}
+.middle-bar .stories .story p{
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+.middle-bar .content-down{
+    margin-top: 50px;
+}
+.middle-bar .content-down .post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.middle-bar .content-down .post .top-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.middle-bar .content-down .post .top-sec .top-sec-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.middle-bar .content-down .post .top-sec .top-sec-left div p{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.middle-sec{
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.middle-bar .content-down .post .post-img{
+    height: 400px;
+    width: 100%;
+}
+.post-icons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.post-icons div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-icons div i{
+    font-size: 18px;
+}
+.post-icons div p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* right bar */
+
+
+.right-bar{
+    width: 18%;
+    height: 100vh;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+.right-bar .cards p{
+    margin-bottom: 20px;
+    color: grey;
+}
+.right-bar .cards .card{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+}
+.right-bar .cards .card .card-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-bar .cards .card .card-parent .card-parent-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.card-parent-left p {
+    margin-top: 20px;
+}
+.right-bar .cards {
+    margin-top: 20px;
+}
+.right-bar .cards .card .card-parent .card-parent-left img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card-parent-right{
+    display: flex;
+    gap: 2px;
+}
+.card-parent-right button{
+  padding: 5px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.card-parent-right .blue{
+    background-color: blue;
+}
+.card-parent-left{
+    position: relative;
+}
+.card-parent-left span{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(20, 226, 20);
+    border-radius: 50%;
+    position: absolute;
+    left: 22px;
+    top: 15px;
+}
+
+@media screen and (max-width : 480px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    .navbar .navbar-left{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar .navbar-left h2{
+        color: blue;
+        display: none;
+    }
+    .navbar .navbar-left .icons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar .navbar-left .navbar-search{
+        display: none;
+    }
+    .navbar .navbar-right i{
+        display: none;
+    }
+
+    .left-bar{
+        display: none;
+    }
+    .right-bar{
+        display: none;
+    }
+    .middle-bar .content-up .stories .story span{
+        display: none;
+    }
+    .middle-bar .stories {
+        margin-left: 160px;
+    }
+    
+    .middle-bar .stories .story img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .middle-bar .stories .story p{
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+    }
+    .middle-bar .content-down .post {
+        width: 350px;
+        margin-left: 20px;
+    }
+  
+    .post-icons div p{
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
